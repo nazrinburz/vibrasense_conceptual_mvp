@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibraSense - AI-Powered Industrial Monitoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #3b82f6, #1e40af);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-title {
+            @apply text-3xl font-bold text-gray-800 sm:text-4xl text-center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="#">
+                    <img src="https://storage.googleapis.com/gemini-prod-us-west1-409903423759/images/15477a35-0c58-45e0-91a0-3882a176e736.jpg" alt="VibraSense Logo" class="h-12 w-auto">
+                </a>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#problem" class="text-gray-600 hover:text-blue-600 transition-colors">The Problem</a>
+                    <a href="#solution" class="text-gray-600 hover:text-blue-600 transition-colors">Our Solution</a>
+                    <a href="#technology" class="text-gray-600 hover:text-blue-600 transition-colors">Technology</a>
+                    <a href="#use-cases" class="text-gray-600 hover:text-blue-600 transition-colors">Use Cases</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-sm">Partner With Us</a>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200">
+            <a href="#problem" class="block py-3 px-6 text-sm text-gray-700 hover:bg-gray-100">The Problem</a>
+            <a href="#solution" class="block py-3 px-6 text-sm text-gray-700 hover:bg-gray-100">Our Solution</a>
+            <a href="#technology" class="block py-3 px-6 text-sm text-gray-700 hover:bg-gray-100">Technology</a>
+            <a href="#use-cases" class="block py-3 px-6 text-sm text-gray-700 hover:bg-gray-100">Use Cases</a>
+            <a href="#contact" class="block py-3 px-6 text-sm text-gray-700 hover:bg-gray-100">Partner With Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[70vh] md:h-[85vh] flex items-center justify-center text-white text-center px-4">
+            <div class="absolute inset-0 bg-gray-900 opacity-70"></div>
+            <img src="https://placehold.co/1600x900/2d3748/ffffff?text=Industrial+Machinery" 
+                 onerror="this.onerror=null;this.src='https://placehold.co/1600x900/2d3748/e2e8f0?text=Image+Not+Found';"
+                 alt="Industrial Machinery Background" class="absolute inset-0 w-full h-full object-cover">
+            <div class="relative z-10 max-w-4xl">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight">See the Unseen. Predict the Unthinkable.</h1>
+                <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-200">
+                    VibraSense is an AI-powered platform using video to detect critical equipment faults before they happen. No sensors, no downtime, just intelligent insight.
+                </p>
+                <a href="#solution" class="mt-10 inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-transform hover:scale-105 shadow-lg">Discover Our Technology</a>
+            </div>
+        </section>
+
+        <!-- The Problem Section -->
+        <section id="problem" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">The High Cost of Traditional Maintenance</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-center text-lg text-gray-600">Industrial operations are plagued by inefficiencies that lead to massive losses. The current approach is broken.</p>
+                <div class="mt-16 grid gap-8 md:grid-cols-3">
+                    <!-- Problem Card 1 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:-translate-y-1 transition-all">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-red-100 text-red-600 mx-auto">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-bold text-center text-gray-900">Unplanned Downtime</h3>
+                        <p class="mt-2 text-center text-gray-600">Reactive maintenance leads to unexpected failures, halting production and causing significant financial and operational disruption.</p>
+                    </div>
+                    <!-- Problem Card 2 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:-translate-y-1 transition-all">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-yellow-100 text-yellow-600 mx-auto">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01"></path></svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-bold text-center text-gray-900">Excessive Costs</h3>
+                        <p class="mt-2 text-center text-gray-600">Scheduled maintenance is often unnecessary, leading to wasted resources. Physical sensors are expensive to buy, install, and maintain.</p>
+                    </div>
+                    <!-- Problem Card 3 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:shadow-lg hover:-translate-y-1 transition-all">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mx-auto">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 6V3m0 18v-3"></path></svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-bold text-center text-gray-900">Deployment Complexity</h3>
+                        <p class="mt-2 text-center text-gray-600">Contact-based sensors require physical installation on each machine, a complex and often hazardous process that scales poorly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Solution Section -->
+        <section id="solution" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-24 lg:items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">The Future is <span class="gradient-text">Contactless</span></h2>
+                        <p class="mt-6 text-lg text-gray-600">VibraSense revolutionizes industrial monitoring by replacing physical sensors with smart, vision-based analysis. We leverage existing or high-speed cameras to see what the human eye can't, identifying micro-vibrations that signal impending failure.</p>
+                        <ul class="mt-8 space-y-5">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1"><svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></div>
+                                <p class="ml-4"><strong class="text-gray-900">Scalable & Non-Invasive:</strong> Monitor entire factory floors without touching a single machine.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1"><svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></div>
+                                <p class="ml-4"><strong class="text-gray-900">Cost-Effective:</strong> Leverage existing camera infrastructure or low-cost high-speed cameras.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1"><svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></div>
+                                <p class="ml-4"><strong class="text-gray-900">Highly Accurate:</strong> Our AI models detect faults like imbalance, friction, and cracks with remarkable precision.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-12 lg:mt-0">
+                        <img class="rounded-xl shadow-2xl w-full h-auto object-cover" 
+                             src="https://placehold.co/600x450/e0e7ff/3730a3?text=AI+Analysis+Visualization"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x450/e0e7ff/3730a3?text=Image+Not+Found';"
+                             alt="AI Analysis Visualization">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Pipeline Section -->
+        <section id="technology" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Our Technical Pipeline</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-center text-lg text-gray-600">We transform raw video into actionable intelligence through a sophisticated, multi-stage process.</p>
+                <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Step 1 -->
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                        <span class="text-3xl font-bold text-blue-600">01</span>
+                        <h4 class="mt-4 text-lg font-semibold text-gray-900">Video Capture</h4>
+                        <p class="mt-1 text-gray-600">Record machinery at 100-1000+ FPS to capture subtle micro-vibrations.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                        <span class="text-3xl font-bold text-blue-600">02</span>
+                        <h4 class="mt-4 text-lg font-semibold text-gray-900">Motion Magnification</h4>
+                        <p class="mt-1 text-gray-600">Amplify imperceptible pixel movements to make hidden vibrations visible.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                        <span class="text-3xl font-bold text-blue-600">03</span>
+                        <h4 class="mt-4 text-lg font-semibold text-gray-900">Signal Extraction</h4>
+                        <p class="mt-1 text-gray-600">Convert pixel intensity changes into time-series vibration data.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                        <span class="text-3xl font-bold text-blue-600">04</span>
+                        <h4 class="mt-4 text-lg font-semibold text-gray-900">Fourier Transform (FFT)</h4>
+                        <p class="mt-1 text-gray-600">Transform signals into the frequency domain to isolate patterns.</p>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                        <span class="text-3xl font-bold text-blue-600">05</span>
+                        <h4 class="mt-4 text-lg font-semibold text-gray-900">Feature Extraction</h4>
+                        <p class="mt-1 text-gray-600">Identify key statistical descriptors like peak frequency, entropy, and energy.</p>
+                    </div>
+                    <!-- Step 6 -->
+                    <div class="bg-green-50 p-6 rounded-lg border border-green-200">
+                        <span class="text-3xl font-bold text-green-600">06</span>
+                        <h4 class="mt-4 text-lg font-semibold text-gray-900">AI Inference</h4>
+                        <p class="mt-1 text-gray-600">Feed features into ML models to classify faults and predict Remaining Useful Life (RUL).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section id="use-cases" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Potential Applications Across Industries</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-center text-lg text-gray-600">Our technology is versatile and can be applied to any sector that relies on critical rotating machinery.</p>
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center group">
+                        <div class="flex items-center justify-center bg-white w-24 h-24 mx-auto rounded-full border-2 border-gray-200 group-hover:border-blue-500 transition-colors">
+                           <img src="https://placehold.co/100x100/e0f2fe/0891b2?text=O%26G" class="rounded-full" alt="Oil & Gas icon">
+                        </div>
+                        <h4 class="mt-5 font-semibold text-gray-900">Oil & Gas</h4>
+                        <p class="text-sm text-gray-600">Monitor pumps & compressors.</p>
+                    </div>
+                    <div class="text-center group">
+                        <div class="flex items-center justify-center bg-white w-24 h-24 mx-auto rounded-full border-2 border-gray-200 group-hover:border-blue-500 transition-colors">
+                           <img src="https://placehold.co/100x100/e0e7ff/4338ca?text=Energy" class="rounded-full" alt="Energy Sector icon">
+                        </div>
+                        <h4 class="mt-5 font-semibold text-gray-900">Energy Sector</h4>
+                        <p class="text-sm text-gray-600">Analyze turbines & generators.</p>
+                    </div>
+                    <div class="text-center group">
+                        <div class="flex items-center justify-center bg-white w-24 h-24 mx-auto rounded-full border-2 border-gray-200 group-hover:border-blue-500 transition-colors">
+                           <img src="https://placehold.co/100x100/dcfce7/166534?text=Factory" class="rounded-full" alt="Manufacturing icon">
+                        </div>
+                        <h4 class="mt-5 font-semibold text-gray-900">Manufacturing</h4>
+                        <p class="text-sm text-gray-600">Detect faults in production lines.</p>
+                    </div>
+                    <div class="text-center group">
+                        <div class="flex items-center justify-center bg-white w-24 h-24 mx-auto rounded-full border-2 border-gray-200 group-hover:border-blue-500 transition-colors">
+                           <img src="https://placehold.co/100x100/fef3c7/b45309?text=Aero" class="rounded-full" alt="Aerospace icon">
+                        </div>
+                        <h4 class="mt-5 font-semibold text-gray-900">Aerospace</h4>
+                        <p class="text-sm text-gray-600">Non-contact structural analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Partner With Us Section -->
+        <section id="contact" class="py-24 bg-blue-700 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold sm:text-4xl">Join Us in Building the Future of Industrial AI</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-blue-100">We are seeking strategic partners to help us validate our technology and bring VibraSense to market. Your support can accelerate our mission.</p>
+                
+                <div class="mt-16 max-w-4xl mx-auto bg-white/10 p-8 rounded-xl backdrop-blur-sm">
+                    <h3 class="text-2xl font-semibold">What We Need to Succeed:</h3>
+                    <div class="mt-8 grid md:grid-cols-2 gap-6 text-left">
+                        <div class="flex items-start space-x-4 p-4">
+                            <span class="text-2xl font-bold text-blue-300">1.</span>
+                            <div>
+                                <h4 class="font-bold text-white">Access to Industrial Data</h4>
+                                <p class="mt-1 text-blue-200 text-sm">High-speed camera access or demo footage to train and refine our models.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 p-4">
+                            <span class="text-2xl font-bold text-blue-300">2.</span>
+                            <div>
+                                <h4 class="font-bold text-white">Compute Resources</h4>
+                                <p class="mt-1 text-blue-200 text-sm">GPU resources for efficient model training and large-scale data processing.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 p-4">
+                            <span class="text-2xl font-bold text-blue-300">3.</span>
+                            <div>
+                                <h4 class="font-bold text-white">Mentorship & Validation</h4>
+                                <p class="mt-1 text-blue-200 text-sm">Guidance from industry experts and technical validation of our approach.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 p-4">
+                            <span class="text-2xl font-bold text-blue-300">4.</span>
+                            <div>
+                                <h4 class="font-bold text-white">Pilot Partnership</h4>
+                                <p class="mt-1 text-blue-200 text-sm">An opportunity to pilot VibraSense with an industrial partner to prove real-world value.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                     <h3 class="text-xl font-semibold">Ready to collaborate?</h3>
+                     <a href="mailto:info@vibrasense.com" class="mt-4 inline-block bg-white text-blue-700 px-10 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200 transition-transform hover:scale-105 shadow-lg">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+                <div class="mb-4 sm:mb-0">
+                    <img src="https://storage.googleapis.com/gemini-prod-us-west1-409903423759/images/15477a35-0c58-45e0-91a0-3882a176e736.jpg" alt="VibraSense Logo" class="h-10 w-auto opacity-70">
+                </div>
+                <p class="text-sm text-gray-400 mb-4 sm:mb-0">&copy; 2025 VibraSense. All rights reserved.</p>
+                <div class="text-sm">
+                    <a href="mailto:info@vibrasense.com" class="text-gray-300 hover:text-white transition-colors">info@vibrasense.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
