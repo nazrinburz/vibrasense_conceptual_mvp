@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VibraSense - AI-Powered Industrial Monitoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #2563eb, #1d4ed8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6">
+            <div class="flex h-16 items-center justify-between">
+                <!-- Inline SVG Logo -->
+                <a href="#" aria-label="VibraSense Homepage" class="flex items-center space-x-2">
+    <img src="logo.png" alt="VibraSense Logo" class="h-8 w-auto select-none" />
+    <span class="text-white font-semibold select-none">VibraSense</span>
+</a>
+
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#problem" class="text-base font-medium text-gray-600 hover:text-blue-600 transition-colors">The Problem</a>
+                    <a href="#solution" class="text-base font-medium text-gray-600 hover:text-blue-600 transition-colors">Our Solution</a>
+                    <a href="#technology" class="text-base font-medium text-gray-600 hover:text-blue-600 transition-colors">Technology</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button
+                    id="mobile-menu-button"
+                    class="md:hidden -mr-2 p-2 inline-flex items-center justify-center rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+                >
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#problem" class="block py-2 px-3 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-md">The Problem</a>
+                <a href="#solution" class="block py-2 px-3 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-md">Our Solution</a>
+                <a href="#technology" class="block py-2 px-3 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-md">Technology</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gray-900">
+            <div class="absolute inset-0">
+                <img
+                    src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1470&q=80"
+                    alt="Industrial machinery with vibration monitoring"
+                    class="w-full h-full object-cover"
+                    style="filter: brightness(0.5);"
+                />
+            </div>
+            <div
+                class="relative container mx-auto px-6 py-28 sm:py-36 lg:py-44 text-center max-w-4xl"
+                style="min-height: 450px;"
+            >
+                <h1
+                    class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white uppercase leading-tight"
+                    style="line-height: 1.1;"
+                >
+                    <span class="block">See the Unseen.</span>
+                    <span class="block text-blue-400 mt-3">Predict the Unthinkable.</span>
+                </h1>
+                <p class="mt-8 text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+                    VibraSense uses advanced AI and video analysis to detect critical equipment faults before they happen—without sensors, without downtime.
+                </p>
+                <div class="mt-12">
+                    <a
+                        href="#solution"
+                        class="inline-block bg-blue-600 text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-blue-500 transition-all duration-300 transform hover:scale-105 shadow-2xl"
+                        >Discover Our Technology</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- The Problem Section -->
+        <section id="problem" class="py-24 sm:py-32">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
+                    The High Cost of Traditional Maintenance
+                </h2>
+                <p class="mt-4 max-w-3xl mx-auto text-center text-lg leading-8 text-gray-600">
+                    Industrial operations face costly unplanned downtime and inefficient maintenance methods.
+                </p>
+                <div class="mt-16 grid gap-8 md:grid-cols-3">
+                    <!-- Problem Card 1 -->
+                    <div
+                        class="text-center p-8 bg-gray-50 rounded-xl border border-gray-200/80 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                    >
+                        <div
+                            class="flex items-center justify-center h-16 w-16 rounded-full bg-red-100 text-red-600 mx-auto"
+                        >
+                            <svg
+                                class="w-8 h-8"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-semibold text-gray-900">Unplanned Downtime</h3>
+                        <p class="mt-2 text-gray-600">
+                            Unexpected failures halt production and cause major operational disruptions.
+                        </p>
+                    </div>
+                    <!-- Problem Card 2 -->
+                    <div
+                        class="text-center p-8 bg-gray-50 rounded-xl border border-gray-200/80 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                    >
+                        <div
+                            class="flex items-center justify-center h-16 w-16 rounded-full bg-yellow-100 text-yellow-600 mx-auto"
+                        >
+                            <svg
+                                class="w-8 h-8"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-semibold text-gray-900">Excessive Costs</h3>
+                        <p class="mt-2 text-gray-600">
+                            Installing and maintaining physical sensors is expensive and resource-intensive.
+                        </p>
+                    </div>
+                    <!-- Problem Card 3 -->
+                    <div
+                        class="text-center p-8 bg-gray-50 rounded-xl border border-gray-200/80 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                    >
+                        <div
+                            class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-600 mx-auto"
+                        >
+                            <svg
+                                class="w-8 h-8"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 6V3m0 18v-3"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="mt-6 text-xl font-semibold text-gray-900">Deployment Complexity</h3>
+                        <p class="mt-2 text-gray-600">
+                            Physical sensors require complex installation and may not scale well in large facilities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Solution Section -->
+        <section id="solution" class="py-24 sm:py-32 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-24 lg:items-center">
+                    <div class="relative">
+                        <img
+                            class="rounded-2xl shadow-xl w-full h-auto object-cover"
+                            src="https://placehold.co/600x450/bfdbfe/1e3a8a?text=AI+Analysis+Visualization"
+                            alt="AI Analysis Visualization"
+                        />
+                    </div>
+                    <div class="mt-12 lg:mt-0">
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                            The Future is <span class="gradient-text">Contactless</span>
+                        </h2>
+                        <p class="mt-6 text-lg leading-8 text-gray-600">
+                            VibraSense replaces costly physical sensors with smart vision-based AI. Cameras capture micro-vibrations invisible to the human eye, enabling predictive fault detection without machine downtime.
+                        </p>
+                        <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <svg
+                                        class="absolute left-1 top-1 h-5 w-5 text-blue-600"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 4.5 4.5 0 014.504 4.272A4.5 4.5 0 0115.5 17h-10z"
+                                            clip-rule="evenodd"
+                                        />
+                                    </svg>
+                                    Scalable & Non-Invasive
+                                </dt>
+                                <dd class="inline">Monitor entire factory floors without touching a single machine.</dd>
+                            </div>
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <svg
+                                        class="absolute left-1 top-1 h-5 w-5 text-blue-600"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            d="M10 8a2 2 0 100-4 2 2 0 000 4zM3.464 14.536a5 5 0 017.072 0l2.12 2.122a1 1 0 01-1.414 1.414l-2.121-2.122a3 3 0 00-4.242 0 3 3 0 000 4.242l2.12 2.122a1 1 0 01-1.414 1.414l-2.122-2.12a5 5 0 010-7.072zM16.536 3.464a5 5 0 010 7.072l-2.122 2.12a1 1 0 01-1.414-1.414l2.121-2.121a3 3 0 000-4.242 3 3 0 00-4.242 0l-2.122 2.121a1 1 0 01-1.414-1.414l2.121-2.121a5 5 0 017.072 0z"
+                                        />
+                                    </svg>
+                                    AI-Driven Fault Detection
+                                </dt>
+                                <dd class="inline">Automatically classify equipment faults with high accuracy using video data.</dd>
+                            </div>
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <svg
+                                        class="absolute left-1 top-1 h-5 w-5 text-blue-600"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-7a1 1 0 112 0 1 1 0 01-2 0z"
+                                            clip-rule="evenodd"
+                                        />
+                                    </svg>
+                                    Rapid Deployment
+                                </dt>
+                                <dd class="inline">Easy to install cameras and software — no machine downtime required.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Section -->
+        <section id="technology" class="py-24 sm:py-32">
+    <div class="container mx-auto px-6 max-w-5xl">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center mb-10">
+            Technology Overview
+        </h2>
+        <div class="space-y-12 text-gray-700 leading-relaxed text-lg">
+            <!-- Step 1: High-Speed Video Capture -->
+            <div class="flex items-start space-x-6">
+                <div class="flex-shrink-0">
+                    <svg class="h-10 w-10 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M4 6h4l2 10h4" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">High-Speed Video Capture</h3>
+                    <p>
+                        Footage of machinery is captured at high frame rates to expose subtle, invisible vibrations. Using OpenCV, each video is processed frame-by-frame as numerical arrays for further analysis.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 2: Eulerian Motion Magnification -->
+            <div class="flex items-start space-x-6">
+                <div class="flex-shrink-0">
+                    <svg class="h-10 w-10 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Eulerian Motion Magnification</h3>
+                    <p>
+                        Subtle motions are amplified by enhancing pixel intensity changes over time. A temporal bandpass filter isolates relevant frequency ranges, and magnification factors highlight meaningful vibrations without distortion.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 3: Signal Extraction -->
+            <div class="flex items-start space-x-6">
+                <div class="flex-shrink-0">
+                    <svg class="h-10 w-10 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Signal Extraction</h3>
+                    <p>
+                        Intensity changes over time are tracked from individual pixels or regions. The result is a 1D time-series signal that reflects micro-vibrations with high temporal precision.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 4: Fast Fourier Transform -->
+            <div class="flex items-start space-x-6">
+                <div class="flex-shrink-0">
+                    <svg class="h-10 w-10 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Fourier Transform (FFT)</h3>
+                    <p>
+                        Signals are transformed into the frequency domain using FFT to expose dominant vibration frequencies. We compute magnitude or power spectra and extract features like peak frequency and spectral entropy.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 5: AI-Powered Inference -->
+            <div class="flex items-start space-x-6">
+                <div class="flex-shrink-0">
+                    <svg class="h-10 w-10 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656-5.656m2.828-2.828a4 4 0 115.656 5.656M10 12l2 2 4-4" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">AI-Powered Inference</h3>
+                    <p>
+                        Extracted features are fed into machine learning models to classify faults and detect anomalies. Depending on dataset quality, we use statistical inputs or raw spectra to drive predictive insights.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="container mx-auto px-6 py-8">
+            <div
+                class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0"
+            >
+                <a href="#" aria-label="VibraSense Homepage" class="flex items-center space-x-2">
+    <img src="logo.png" alt="VibraSense Logo" class="h-8 w-auto select-none" />
+    <span class="text-white font-semibold select-none">VibraSense</span>
+</a>
+
+                <p class="text-sm text-gray-400 select-none">&copy; 2025 VibraSense. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach((link) => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
