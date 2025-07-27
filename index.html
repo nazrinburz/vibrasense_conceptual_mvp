@@ -195,81 +195,95 @@
         </section>
 
         <!-- The Solution Section -->
-        <section id="solution" class="py-24 sm:py-32 bg-gray-50">
-            <div class="container mx-auto px-6">
-                <div class="lg:grid lg:grid-cols-2 lg:gap-24 lg:items-center">
-                    <div class="relative">
-                        <img
-                            class="rounded-2xl shadow-xl w-full h-auto object-cover"
-                            src="https://placehold.co/600x450/bfdbfe/1e3a8a?text=AI+Analysis+Visualization"
-                            alt="AI Analysis Visualization"
-                        />
-                    </div>
-                    <div class="mt-12 lg:mt-0">
-                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            The Future is <span class="gradient-text">Contactless</span>
-                        </h2>
-                        <p class="mt-6 text-lg leading-8 text-gray-600">
-                            VibraSense replaces costly physical sensors with smart vision-based AI. Cameras capture micro-vibrations invisible to the human eye, enabling predictive fault detection without machine downtime.
-                        </p>
-                        <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                            <div class="relative pl-9">
-                                <dt class="inline font-semibold text-gray-900">
-                                    <svg
-                                        class="absolute left-1 top-1 h-5 w-5 text-blue-600"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                        aria-hidden="true"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 4.5 4.5 0 014.504 4.272A4.5 4.5 0 0115.5 17h-10z"
-                                            clip-rule="evenodd"
-                                        />
-                                    </svg>
-                                    Scalable & Non-Invasive
-                                </dt>
-                                <dd class="inline">Monitor entire factory floors without touching a single machine.</dd>
-                            </div>
-                            <div class="relative pl-9">
-                                <dt class="inline font-semibold text-gray-900">
-                                    <svg
-                                        class="absolute left-1 top-1 h-5 w-5 text-blue-600"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                        aria-hidden="true"
-                                    >
-                                        <path
-                                            d="M10 8a2 2 0 100-4 2 2 0 000 4zM3.464 14.536a5 5 0 017.072 0l2.12 2.122a1 1 0 01-1.414 1.414l-2.121-2.122a3 3 0 00-4.242 0 3 3 0 000 4.242l2.12 2.122a1 1 0 01-1.414 1.414l-2.122-2.12a5 5 0 010-7.072zM16.536 3.464a5 5 0 010 7.072l-2.122 2.12a1 1 0 01-1.414-1.414l2.121-2.121a3 3 0 000-4.242 3 3 0 00-4.242 0l-2.122 2.121a1 1 0 01-1.414-1.414l2.121-2.121a5 5 0 017.072 0z"
-                                        />
-                                    </svg>
-                                    AI-Driven Fault Detection
-                                </dt>
-                                <dd class="inline">Automatically classify equipment faults with high accuracy using video data.</dd>
-                            </div>
-                            <div class="relative pl-9">
-                                <dt class="inline font-semibold text-gray-900">
-                                    <svg
-                                        class="absolute left-1 top-1 h-5 w-5 text-blue-600"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                        aria-hidden="true"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-7a1 1 0 112 0 1 1 0 01-2 0z"
-                                            clip-rule="evenodd"
-                                        />
-                                    </svg>
-                                    Rapid Deployment
-                                </dt>
-                                <dd class="inline">Easy to install cameras and software — no machine downtime required.</dd>
-                            </div>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section id="solution" class="py-24 sm:py-32 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-24 lg:items-center">
+      <!-- Left Card: YouTube Video + Credit -->
+      <div class="relative">
+        <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-xl">
+          <iframe
+            src="https://www.youtube.com/embed/DwZSBYMqf6U"
+            title="Eulerian Motion Magnification Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="w-full h-full"
+          ></iframe>
+        </div>
+        <p class="text-sm text-gray-500 mt-2">
+          Video source: 
+          <a href="https://youtu.be/DwZSBYMqf6U" target="_blank" rel="noopener noreferrer" class="underline hover:text-blue-600">
+            YouTube Channel Name
+          </a>
+        </p>
+      </div>
+
+      <!-- Right Card: Text content -->
+      <div class="mt-12 lg:mt-0">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          The Future is <span class="gradient-text">Contactless</span>
+        </h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600">
+          VibraSense replaces costly physical sensors with smart vision-based AI. Cameras capture micro-vibrations invisible to the human eye, enabling predictive fault detection without machine downtime.
+        </p>
+        <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+          <div class="relative pl-9">
+            <dt class="inline font-semibold text-gray-900">
+              <svg
+                class="absolute left-1 top-1 h-5 w-5 text-blue-600"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 4.5 4.5 0 014.504 4.272A4.5 4.5 0 0115.5 17h-10z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Scalable & Non-Invasive
+            </dt>
+            <dd class="inline">Monitor entire factory floors without touching a single machine.</dd>
+          </div>
+          <div class="relative pl-9">
+            <dt class="inline font-semibold text-gray-900">
+              <svg
+                class="absolute left-1 top-1 h-5 w-5 text-blue-600"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M10 8a2 2 0 100-4 2 2 0 000 4zM3.464 14.536a5 5 0 017.072 0l2.12 2.122a1 1 0 01-1.414 1.414l-2.121-2.122a3 3 0 00-4.242 0 3 3 0 000 4.242l2.12 2.122a1 1 0 01-1.414 1.414l-2.122-2.12a5 5 0 010-7.072zM16.536 3.464a5 5 0 010 7.072l-2.122 2.12a1 1 0 01-1.414-1.414l2.121-2.121a3 3 0 000-4.242 3 3 0 00-4.242 0l-2.122 2.121a1 1 0 01-1.414-1.414l2.121-2.121a5 5 0 017.072 0z"
+                />
+              </svg>
+              AI-Driven Fault Detection
+            </dt>
+            <dd class="inline">Automatically classify equipment faults with high accuracy using video data.</dd>
+          </div>
+          <div class="relative pl-9">
+            <dt class="inline font-semibold text-gray-900">
+              <svg
+                class="absolute left-1 top-1 h-5 w-5 text-blue-600"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-7a1 1 0 112 0 1 1 0 01-2 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Rapid Deployment
+            </dt>
+            <dd class="inline">Easy to install cameras and software — no machine downtime required.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         <!-- Technology Section -->
         <section id="technology" class="py-24 sm:py-32">
@@ -359,7 +373,7 @@
 
     <!-- Footer -->
 <footer class="bg-gray-100 text-gray-800">
-  <div class="max-w-screen-xl mx-auto px-6 py-8">
+  <div class="max-w-4xl mx-auto px-6 py-8">
     <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
       <a href="#" aria-label="VibraSense Homepage" class="flex items-center space-x-2">
         <img src="logo.png" alt="VibraSense Logo" class="max-h-14 w-auto select-none" />
