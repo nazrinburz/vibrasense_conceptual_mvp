@@ -199,23 +199,24 @@
   <div class="container mx-auto px-6">
     <div class="lg:grid lg:grid-cols-2 lg:gap-24 lg:items-center">
       <!-- Left Card: YouTube Video + Credit -->
-      <div class="relative">
-        <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-xl">
-          <iframe
-            src="https://www.youtube.com/embed/DwZSBYMqf6U"
-            title="Eulerian Motion Magnification Video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            class="w-full h-full"
-          ></iframe>
-        </div>
-        <p class="text-sm text-gray-500 mt-2">
-          Video source: 
-          <a href="https://youtu.be/DwZSBYMqf6U" target="_blank" rel="noopener noreferrer" class="underline hover:text-blue-600">
-            YouTube Channel Name
-          </a>
-        </p>
-      </div>
+<div class="relative" style="max-width: 100%; height: auto;">
+  <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden; border-radius: 0.75rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);">
+    <iframe
+      src="https://www.youtube.com/embed/DwZSBYMqf6U"
+      title="Eulerian Motion Magnification Video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      style="position: absolute; top:0; left: 0; width: 100%; height: 100%; border: 0;"
+    ></iframe>
+  </div>
+  <p class="text-sm text-gray-500 mt-2">
+    Video source: 
+    <a href="https://youtu.be/DwZSBYMqf6U" target="_blank" rel="noopener noreferrer" class="underline hover:text-blue-600">
+      Yellotec
+    </a>
+  </p>
+</div>
+
 
       <!-- Right Card: Text content -->
       <div class="mt-12 lg:mt-0">
